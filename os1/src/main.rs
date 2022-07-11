@@ -34,9 +34,11 @@ pub fn rust_main() -> ! {
         fn boot_stack();
         fn boot_stack_top();
     }
+
+
     clear_bss();
     logging::init();
-    println!("Hello, world!");
+    println!("Hello, world!:)");
     trace!(".text [{:#x}, {:#x})", stext as usize, etext as usize);
     debug!(".rodata [{:#x}, {:#x})", srodata as usize, erodata as usize);
     info!(".data [{:#x}, {:#x})", sdata as usize, edata as usize);
